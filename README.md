@@ -7,7 +7,7 @@ Esse desafio foi além de listar Pokémons — ele trouxe a oportunidade de expl
 
 # RESULTADO COM A PÁGINA DE DETALHES DA POKEDEX
 
-![image](https://github.com/user-attachments/assets/9fde0c06-2cbc-4019-8b2f-f182fe4e7132)
+![image]()
 
 
 A construção da tela de detalhes ensinou:
