@@ -19,4 +19,3 @@ A construção da tela de detalhes ensinou:
 - A aplicar lógica condicional e manipulação de eventos
 - E a manter uma interface limpa, intuitiva e visualmente agradável
 
-Mais do que um exercício técnico, esse desafio mostrou como transformar uma simples listagem em uma experiência interativa e envolvente.
