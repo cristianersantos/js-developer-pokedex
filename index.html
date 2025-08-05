@@ -29,6 +29,22 @@
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
         </ol>
+        <div id="pokemonDetailCard" class="pokemon-card hidden">
+            <button id="closeDetailButton" class="close-button">&times;</button>
+                <div class="pokemon-header hidden">
+                    <h2 id="pokemonDetailName">Bulbasaur</h2>
+                    <span id="pokemonDetailId">#001</span>
+                </div>
+            <img id="pokemonDetailImage" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Pokemon image">
+            <div id="pokemonDetailTypes" class="pokemon-types"></div>
+            <div class="pokemon-info">
+                
+                <p><strong>Species:</strong> <span id="pokemonDetailSpecies"></span></p>
+                <p><strong>Height:</strong> <span id="pokemonDetailHeight"></span></p>
+                <p><strong>Weight:</strong> <span id="pokemonDetailWeight"></span></p>
+                <p><strong>Abilities:</strong> <span id="pokemonDetailAbilities"></span></p>
+            </div>
+        </div>
 
         <div class="pagination">
             <button id="loadMoreButton" type="button">

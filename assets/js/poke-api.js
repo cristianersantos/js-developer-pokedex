@@ -12,7 +12,13 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
     pokemon.types = types
     pokemon.type = type
 
-    pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
+    pokemon.photo = pokeDetail.sprites.other.dream_world.front_default || pokeDetail.sprites.front_default
+
+    // Novos detalhes do Pokémon
+    pokemon.species = pokeDetail.species.name
+    pokemon.height = pokeDetail.height
+    pokemon.weight = pokeDetail.weight
+    pokemon.abilities = pokeDetail.abilities.map(abilitySlot => abilitySlot.ability.name)
 
     return pokemon
 }
@@ -33,3 +39,13 @@ pokeApi.getPokemons = (offset = 0, limit = 5) => {
         .then((detailRequests) => Promise.all(detailRequests))
         .then((pokemonsDetails) => pokemonsDetails)
 }
+
+// Nova função para buscar um único Pokémon pelo nome
+pokeApi.getPokemonByName = (name) => {
+    const url = `https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}`
+
+    return fetch(url)
+        .then((response) => response.json())
+        .then(convertPokeApiDetailToPokemon)
+}
+

@@ -8,10 +8,23 @@ body {
 }
 
 .content {
+    background-image: url(../img/pokemon-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100vw;
     height: 100vh;
     padding: 1rem;
     background-color: #fff;
+}
+
+.content h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    color: rgb(2, 1, 34);
+    text-align: center;
+  
 }
 
 @media screen and (min-width: 992px) {
