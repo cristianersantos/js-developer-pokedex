@@ -7,7 +7,9 @@ Esse desafio foi além de listar Pokémons — ele trouxe a oportunidade de expl
 
 # RESULTADO COM A PÁGINA DE DETALHES DA POKEDEX
 
-![image](./assets/img/127.0.0.1_5500_index.html.png)
+<p align="center">
+  <img src="./assets/img/127.0.0.1_5500_index.html.png" alt="Resultado da Pokédex" width="500"/>
+</p>
 
 
 A construção da tela de detalhes ensinou:
